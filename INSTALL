@@ -1,0 +1,9 @@
+Building Dynasty
+
+See doc/readme-qt.rst for instructions on building Dynasty-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Dynasty.
+
+See doc/build-*.txt for instructions on building dynastyd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Dynasty.
