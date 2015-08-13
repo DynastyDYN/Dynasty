@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">background-image: url(:/images/splash);
-color: rgb(255, 255, 255);</string>
+</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,0">
    <property name="bottomMargin">
@@ -88,7 +88,8 @@ color: rgb(255, 255, 255);</string>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">font-weight:bold;</string>
+             <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
              <string>Coin Control Features</string>
@@ -108,7 +109,8 @@ color: rgb(255, 255, 255);</string>
           <item>
            <widget class="QPushButton" name="pushButtonCoinControl">
             <property name="styleSheet">
-             <string notr="true"/>
+             <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
              <string>Inputs...</string>
@@ -117,6 +119,10 @@ color: rgb(255, 255, 255);</string>
           </item>
           <item>
            <widget class="QLabel" name="labelCoinControlAutomaticallySelected">
+            <property name="styleSheet">
+             <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
+            </property>
             <property name="text">
              <string>automatically selected</string>
             </property>
@@ -220,7 +226,8 @@ color: rgb(255, 255, 255);</string>
                <item row="0" column="0">
                 <widget class="QLabel" name="labelCoinControlQuantityText">
                  <property name="styleSheet">
-                  <string notr="true">font-weight:bold;</string>
+                  <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="text">
                   <string>Quantity:</string>
@@ -245,7 +252,7 @@ color: rgb(255, 255, 255);</string>
                   <enum>Qt::ActionsContextMenu</enum>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(0, 0, 0);</string>
+                  <string notr="true">color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="text">
                   <string notr="true">0</string>
@@ -261,7 +268,8 @@ color: rgb(255, 255, 255);</string>
                <item row="1" column="0">
                 <widget class="QLabel" name="labelCoinControlBytesText">
                  <property name="styleSheet">
-                  <string notr="true">font-weight:bold;</string>
+                  <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="text">
                   <string>Bytes:</string>
@@ -283,7 +291,7 @@ color: rgb(255, 255, 255);</string>
                   <enum>Qt::ActionsContextMenu</enum>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(0, 0, 0);</string>
+                  <string notr="true">color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="text">
                   <string notr="true">0</string>
@@ -315,7 +323,8 @@ color: rgb(255, 255, 255);</string>
                <item row="0" column="0">
                 <widget class="QLabel" name="labelCoinControlAmountText">
                  <property name="styleSheet">
-                  <string notr="true">font-weight:bold;</string>
+                  <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="text">
                   <string>Amount:</string>
@@ -353,7 +362,8 @@ color: rgb(255, 255, 255);</string>
                <item row="1" column="0">
                 <widget class="QLabel" name="labelCoinControlPriorityText">
                  <property name="styleSheet">
-                  <string notr="true">font-weight:bold;</string>
+                  <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="text">
                   <string>Priority:</string>
@@ -407,7 +417,8 @@ color: rgb(255, 255, 255);</string>
                <item row="0" column="0">
                 <widget class="QLabel" name="labelCoinControlFeeText">
                  <property name="styleSheet">
-                  <string notr="true">font-weight:bold;</string>
+                  <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="text">
                   <string>Fee:</string>
@@ -445,7 +456,8 @@ color: rgb(255, 255, 255);</string>
                <item row="1" column="0">
                 <widget class="QLabel" name="labelCoinControlLowOutputText">
                  <property name="styleSheet">
-                  <string notr="true">font-weight:bold;</string>
+                  <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="text">
                   <string>Low Output:</string>
@@ -499,7 +511,8 @@ color: rgb(255, 255, 255);</string>
                <item row="0" column="0">
                 <widget class="QLabel" name="labelCoinControlAfterFeeText">
                  <property name="styleSheet">
-                  <string notr="true">font-weight:bold;</string>
+                  <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="text">
                   <string>After Fee:</string>
@@ -537,7 +550,8 @@ color: rgb(255, 255, 255);</string>
                <item row="1" column="0">
                 <widget class="QLabel" name="labelCoinControlChangeText">
                  <property name="styleSheet">
-                  <string notr="true">font-weight:bold;</string>
+                  <string notr="true">
+color: rgb(255, 255, 255);font-weight:bold;</string>
                  </property>
                  <property name="text">
                   <string>Change:</string>
@@ -592,6 +606,10 @@ color: rgb(255, 255, 255);</string>
           </property>
           <item>
            <widget class="QCheckBox" name="checkBoxCoinControlChange">
+            <property name="styleSheet">
+             <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
+            </property>
             <property name="text">
              <string>custom change address</string>
             </property>
@@ -713,6 +731,10 @@ color: rgb(255, 255, 255);</string>
        <property name="toolTip">
         <string>Send to multiple recipients at once</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string>Add &amp;Recipient</string>
        </property>
@@ -735,6 +757,10 @@ color: rgb(255, 255, 255);</string>
        </property>
        <property name="toolTip">
         <string>Remove all transaction fields</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Clear &amp;All</string>
@@ -807,6 +833,10 @@ color: rgb(255, 255, 255);</string>
        </property>
        <property name="toolTip">
         <string>Confirm the send action</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>S&amp;end</string>

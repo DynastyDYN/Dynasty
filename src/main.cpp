@@ -53,9 +53,9 @@ bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-int64 CTransaction::nMinTxFee = 1000;
+int64 CTransaction::nMinTxFee = 100000;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
-int64 CTransaction::nMinRelayTxFee = 1000;
+int64 CTransaction::nMinRelayTxFee = 100000;
 
 CMedianFilter<int> cPeerBlockCounts(8, 0); // Amount of blocks that other nodes claim to have
 
@@ -74,8 +74,8 @@ double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;
 
 // Settings
-int64 nTransactionFee = 0;
-int64 nMinimumInputValue = DUST_HARD_LIMIT;
+int64 nTransactionFee = 1;
+int64 nMinimumInputValue = CENT / 1000000;
 
 
 //////////////////////////////////////////////////////////////////////////////
@@ -619,7 +619,7 @@ int64 CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
         //   multiple transactions instead of one big transaction to avoid fees.
         // * If we are creating a transaction we allow transactions up to 5,000 bytes
         //   to be considered safe and assume they can likely make it into this section.
-        if (nBytes < (mode == GMF_SEND ? 5000 : (DEFAULT_BLOCK_PRIORITY_SIZE - 1000)))
+        if (nBytes < (mode == GMF_SEND ? 500 : (DEFAULT_BLOCK_PRIORITY_SIZE - 1000)))
             nMinFee = 0;
     }
 
@@ -630,7 +630,7 @@ int64 CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
             nMinFee += nBaseFee;
 
     // Raise the price as the block approaches full
-    if (nBlockSize != 1 && nNewBlockSize >= MAX_BLOCK_SIZE_GEN/2)
+    if (nBlockSize != 1 && nNewBlockSize >= MAX_BLOCK_SIZE_GEN/5)
     {
         if (nNewBlockSize >= MAX_BLOCK_SIZE_GEN)
             return MAX_MONEY;

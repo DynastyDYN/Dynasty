@@ -25,21 +25,21 @@ class CInv;
 class CNode;
 
 struct CBlockIndexWorkComparator;
-
+ 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
-static const unsigned int MAX_BLOCK_SIZE = 1000000;                      // 1000KB block hard limit
+static const unsigned int MAX_BLOCK_SIZE = 100000;                      // 1000KB
 /** Obsolete: maximum size for mined blocks */
-static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/4;         // 250KB  block soft limit
+static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;         // 500KB  block soft limit
 /** Default for -blockmaxsize, maximum size for mined blocks **/
 static const unsigned int DEFAULT_BLOCK_MAX_SIZE = 250000;
 /** Default for -blockprioritysize, maximum space for zero/low-fee transactions **/
 static const unsigned int DEFAULT_BLOCK_PRIORITY_SIZE = 17000;
 /** The maximum size for transactions we're willing to relay/mine */
-static const unsigned int MAX_STANDARD_TX_SIZE = 100;
+static const unsigned int MAX_STANDARD_TX_SIZE = 1000000000;
 /** The maximum allowed number of signature check operations in a block (network rule) */
 static const unsigned int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
 /** Default for -maxorphantx, maximum number of orphan transactions kept in memory */
-static const unsigned int DEFAULT_MAX_ORPHAN_TRANSACTIONS = 20;
+static const unsigned int DEFAULT_MAX_ORPHAN_TRANSACTIONS = 100;
 /** The maximum size of a blk?????.dat file (since 0.8) */
 static const unsigned int MAX_BLOCKFILE_SIZE = 0x8000000; // 128 MiB
 /** The pre-allocation chunk size for blk?????.dat files (since 0.8) */
@@ -49,9 +49,9 @@ static const unsigned int UNDOFILE_CHUNK_SIZE = 0x100000; // 1 MiB
 /** Fake height value used in CCoins to signify they are only in the memory pool (since 0.8) */
 static const unsigned int MEMPOOL_HEIGHT = 0x7FFFFFFF;
 /** Dust Soft Limit, allowed with additional fee per output */
-static const int64 DUST_SOFT_LIMIT = 10; // 0.0000001 DYN
+static const int64 DUST_SOFT_LIMIT = 1000; // 0.00001 DYN
 /** Dust Hard Limit, ignored as wallet inputs (mininput default) */
-static const int64 DUST_HARD_LIMIT = 100;   // 0.00001 DYN mininput
+static const int64 DUST_HARD_LIMIT = 1000;   // 0.00001 DYN mininput
 /** No amount larger than this (in satoshi) is valid */
 static const int64 MAX_MONEY = 100000 * COIN;
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }

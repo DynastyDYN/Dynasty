@@ -14,8 +14,7 @@
    <string>Coin Control</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/splash);
-color: rgb(255, 255, 255);</string>
+   <string notr="true">background-image: url(:/images/splash);</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -43,7 +42,8 @@ color: rgb(255, 255, 255);</string>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlQuantityText">
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Quantity:</string>
@@ -79,7 +79,8 @@ color: rgb(255, 255, 255);</string>
        <item row="1" column="0">
         <widget class="QLabel" name="labelCoinControlBytesText">
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Bytes:</string>
@@ -131,7 +132,8 @@ color: rgb(255, 255, 255);</string>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlAmountText">
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Amount:</string>
@@ -167,7 +169,8 @@ color: rgb(255, 255, 255);</string>
        <item row="1" column="0">
         <widget class="QLabel" name="labelCoinControlPriorityText">
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Priority:</string>
@@ -219,7 +222,8 @@ color: rgb(255, 255, 255);</string>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlFeeText">
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Fee:</string>
@@ -258,7 +262,8 @@ color: rgb(255, 255, 255);</string>
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Low Output:</string>
@@ -313,7 +318,8 @@ color: rgb(255, 255, 255);</string>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlAfterFeeText">
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>After Fee:</string>
@@ -352,7 +358,8 @@ color: rgb(255, 255, 255);</string>
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Change:</string>
@@ -427,6 +434,10 @@ color: rgb(255, 255, 255);</string>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="styleSheet">
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
+         </property>
          <property name="text">
           <string>(un)select all</string>
          </property>
@@ -439,6 +450,10 @@ color: rgb(255, 255, 255);</string>
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Tree mode</string>
@@ -456,6 +471,10 @@ color: rgb(255, 255, 255);</string>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="styleSheet">
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
+         </property>
          <property name="text">
           <string>List mode</string>
          </property>
@@ -463,6 +482,10 @@ color: rgb(255, 255, 255);</string>
        </item>
        <item>
         <widget class="QLabel" name="labelLocked">
+         <property name="styleSheet">
+          <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
+         </property>
          <property name="text">
           <string>(1 locked)</string>
          </property>
@@ -491,8 +514,9 @@ color: rgb(255, 255, 255);</string>
       <enum>Qt::CustomContextMenu</enum>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);</string>
+      <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);
+</string>
      </property>
      <property name="sortingEnabled">
       <bool>false</bool>
@@ -573,6 +597,10 @@ color: rgb(255, 255, 255);</string>
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);</string>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
